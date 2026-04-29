@@ -51,8 +51,14 @@ body {
   border-top: none;
 }
 
-.botao:first-child {
-  border-radius: 40px 40px 0 0;
+.aba-conteudo-titulo-principal {
+  font-size: 28px;
+  text-align: center;
+}
+.aba-conteudo-titulo-secundario {
+  text-align: center;
+  color: var(--verde);
+  text-transform: uppercase;
 }
 
 .botoes {
@@ -62,10 +68,9 @@ body {
   .botoes {
     display: flex;
   }
+.botao:first-child {
+  border-radius: 40px 40px 0 0;
 }
-@media screen and (min-width: 768px) {
-  /* Código omitido */
-
   .botao:last-child {
     border-radius: 0 40px 0 0;
   }
@@ -74,4 +79,8 @@ body {
   background-color: var(--texto-fundo);
   padding: 40px;
   border-radius: 0 0 40px 40px;
+  
+}.botao.ativo {
+  background-color: var(--botao-ativo);
+  border-bottom: 4px solid var(--verde);
 }
